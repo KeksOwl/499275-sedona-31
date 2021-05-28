@@ -1,0 +1,285 @@
+@font-face {
+  font-family: "PT Sans";
+  src:
+    url("../fonts/PTSans.woff2") format("woff2"),
+    url("../fonts/PTSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  src:
+    url("../fonts/PTSans-Bold.woff2") format("woff2"),
+    url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --basic-white: #FFFFFF;
+  --basic-light: #F2F2F2;
+  --basic-neutral: #EEEEEE;
+  --basic-dark: #333333;
+  --basic-black: #000000;
+
+  --special-gray-hover: #EBEBEB;
+  --special-gray-focus: #E5E5E5;
+
+  --special-blue: #81B3D2;
+  --special-blue-hover: #669EC0;
+  --special-blue-click: #5496BD;
+
+  --special-brown: #766357;
+  --special-brown-hover: #604E43;
+  --special-brown-click: #503E33;
+
+  --filter-disabled: #6A6A6A;
+  --filter-dot: #ABABAB;
+  --filter-rating: #666666;
+
+  --sort-basic: #CACACA;
+
+  --icon-gray: #A9A9A9;
+
+  --logo-click: #BDBBBC;
+
+  --opacity-black: rgba(0, 0, 0, 0.3);
+  --opacity-white: rgba(255, 255, 255, 0.3);
+}
+
+body {
+  min-width: 1280px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-dark);
+  text-transform: uppercase;
+  background-color: var(--basic-light);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  background-color: var(--basic-white);
+}
+
+/* Main Navigation */
+
+.main-navigation {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+/* User Navigation */
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover {
+  color: var(--special-blue-hover);
+}
+
+.site-navigation a:focus {
+  color: var(--special-brown);
+}
+
+.site-navigation a:active {
+  color: var(--opacity-black);
+}
+
+/* Features & Benefits */
+
+.features {
+  text-align: center;
+}
+
+.features h3 {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  color: var(--basic-black);
+}
+
+.wrap-container-features {
+  line-height: 26px;
+}
+
+.features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features-container {
+  background-color: var(--special-blue);
+  color: var(--basic-white);
+}
+
+.features-container h3 {
+  color: var(--basic-white);
+}
+
+.benefits-list {
+  list-style: none;
+  background-color: var(--basic-white);
+  color: var(--basic-dark);
+  margin: 0;
+  padding: 0;
+}
+
+.benefits-list h3 {
+  color: var(--basic-black);
+}
+
+.features-gray {
+  background-color: var(--basic-neutral);
+}
+
+/* Search */
+
+.wrap-container-search {
+  line-height: 24px;
+}
+
+.wrap-container-search h2 {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 30px;
+  color: var(--basic-black);
+}
+
+.search-form {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  line-height: 26px;
+}
+
+.search-item input[type="text"],
+.search-item input[type="number"] {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  background-color: var(--basic-light);
+  border: none;
+}
+
+.search-item input[type="text"]:hover,
+.search-item input[type="number"]:hover {
+  background-color: var(--special-gray-hover);
+}
+
+.search-item input[type="text"]:focus,
+.search-item input[type="number"]:focus {
+  background-color: var(--basic-white);
+  outline: 2px solid var(--special-gray-focus);
+}
+
+/* Footer */
+
+.footer-contacts {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.footer-phone {
+  color: var(--basic-black);
+}
+
+.footer-phone:hover {
+  color: var(--special-blue);
+}
+
+.footer-phone:active {
+  color: var(--opacity-black);
+}
+
+.footer-socials ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-button {
+  background-color: var(--special-blue);
+}
+
+.social-button:hover {
+  background-color: var(--special-blue-hover);
+}
+
+.social-button:active {
+  background-color: var(--special-blue-click);
+  color: var(--opacity-white);
+}
+
+.footer-copyright {
+  line-height: 26px;
+}
+
+.footer-copyright a {
+  color: var(--basic-black);
+}
+
+.footer-copyright a:hover {
+  color: var(--special-blue)
+}
+
+.footer-copyright a:active {
+  color: var(--logo-click);
+}
+
+/* Buttons */
+
+.button {
+  color: var(--basic-white);
+  text-transform: uppercase;
+  border: none;
+}
+
+.btn-brown {
+  background-color: var(--special-brown);
+}
+
+.btn-brown:hover {
+  background-color: var(--special-brown-hover);
+}
+
+.btn-brown:active {
+  background-color: var(--special-brown-click);
+  color: var(--opacity-white);
+}
+
+.btn-blue {
+  background-color: var(--special-blue);
+}
+
+.btn-blue:hover {
+  background-color: var(--special-blue-hover);
+}
+
+.btn-blue:active {
+  background-color: var(--special-blue-click);
+  color: var(--opacity-white);
+}
+
+.btn-search {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+}
