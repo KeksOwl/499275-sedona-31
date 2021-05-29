@@ -88,19 +88,19 @@ img {
 
 /* User Navigation */
 
-.site-navigation a {
+.navigation-item {
   color: var(--basic-black);
 }
 
-.site-navigation a:hover {
+.navigation-item:hover {
   color: var(--special-blue-hover);
 }
 
-.site-navigation a:focus {
+.navigation-item:focus {
   color: var(--special-brown);
 }
 
-.site-navigation a:active {
+.navigation-item:active {
   color: var(--opacity-black);
 }
 
@@ -110,7 +110,7 @@ img {
   text-align: center;
 }
 
-.features h3 {
+.features-heading {
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 21px;
   color: var(--basic-black);
@@ -131,7 +131,7 @@ img {
   color: var(--basic-white);
 }
 
-.features-container h3 {
+.features-container-heading {
   color: var(--basic-white);
 }
 
@@ -143,7 +143,7 @@ img {
   padding: 0;
 }
 
-.benefits-list h3 {
+.benefits-heading {
   color: var(--basic-black);
 }
 
@@ -157,7 +157,7 @@ img {
   line-height: 24px;
 }
 
-.wrap-container-search h2 {
+.container-search-heading {
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 30px;
   color: var(--basic-black);
@@ -168,8 +168,7 @@ img {
   line-height: 26px;
 }
 
-.search-item input[type="text"],
-.search-item input[type="number"] {
+.search-item-input {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
@@ -177,13 +176,11 @@ img {
   border: none;
 }
 
-.search-item input[type="text"]:hover,
-.search-item input[type="number"]:hover {
+.search-item-input:hover {
   background-color: var(--special-gray-hover);
 }
 
-.search-item input[type="text"]:focus,
-.search-item input[type="number"]:focus {
+.search-item-input:focus {
   background-color: var(--basic-white);
   outline: 2px solid var(--special-gray-focus);
 }
@@ -209,7 +206,7 @@ img {
   color: var(--opacity-black);
 }
 
-.footer-socials ul {
+.social-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -232,15 +229,15 @@ img {
   line-height: 26px;
 }
 
-.footer-copyright a {
+.footer-copyright-link {
   color: var(--basic-black);
 }
 
-.footer-copyright a:hover {
+.footer-copyright-link:hover {
   color: var(--special-blue)
 }
 
-.footer-copyright a:active {
+.footer-copyright-link:active {
   color: var(--logo-click);
 }
 
