@@ -185,6 +185,125 @@ img {
   outline: 2px solid var(--special-gray-focus);
 }
 
+/* Filter */
+
+.filter {
+  background-image: url(../img/background-catalog.png);
+  background-repeat: no-repeat;
+  background-color: var(--special-blue);
+  background-size: cover;
+  color: var(--basic-white);
+}
+
+.filter-title {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.filter-field {
+  border: none;
+}
+
+.filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-label {
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.filter-input {
+  border: none;
+  color: var(--basic-white);
+  background: none;
+  outline: none;
+}
+
+/* Sort */
+
+.sort-title {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.sort-heading {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.sort-list {
+  list-style: none;
+  padding: 0;
+}
+
+.sort-label {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--opacity-black);
+
+  border-bottom: 1px dotted var(--special-blue);
+}
+
+.sort-label:hover {
+  color: var(--special-blue);
+}
+
+.sort-label:active {
+  color: var(--basic-black);
+
+  border: none;
+}
+
+.sort-input:checked ~ .sort-label {
+  color: var(--special-blue);
+  border: none;
+}
+
+.sort-pagination {
+  color: var(--sort-basic);
+}
+
+.sort-pagination:hover {
+  color: var(--basic-black);
+}
+
+.sort-pagination:active,
+.sort-pagination:focus {
+  color: var(--special-blue);
+}
+
+/* Hotels */
+
+.hotel-list {
+  list-style: none;
+}
+
+.hotel-title {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+
+  color: var(--basic-black);
+}
+
+.hotel-title:hover {
+  color: var(--special-blue);
+}
+
+.hotel-title:active {
+  color: var(--opacity-black);
+}
+
+.hotel-rating {
+  color: var(--filter-rating);
+  background-color: var(--basic-light);
+}
+
 /* Footer */
 
 .footer-contacts {
@@ -247,6 +366,7 @@ img {
   color: var(--basic-white);
   text-transform: uppercase;
   border: none;
+  outline: none;
 }
 
 .btn-brown {
@@ -279,4 +399,15 @@ img {
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
+}
+
+.btn-filter {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+
+  background: none;
+
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
 }
