@@ -332,8 +332,17 @@ img {
 
 /* Hotels */
 
+.hotels {
+  margin: 0 73px;
+}
+
 .hotel-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-rows: 1fr;
 }
 
 .hotel-title {
