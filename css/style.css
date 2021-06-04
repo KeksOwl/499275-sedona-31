@@ -342,7 +342,13 @@ img {
   padding: 0;
 
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.hotel-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 400px;
 }
 
 .hotel-title {
