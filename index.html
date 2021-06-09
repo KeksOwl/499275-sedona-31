@@ -22,10 +22,10 @@
           <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
-          <li><a class="navigation-item" href="#">Информация</a></li>
-          <li><a class="navigation-item" href="#">Фото и видео</a></li>
-          <li><a class="navigation-item" href="#">Карта штата</a></li>
-          <li><a class="navigation-item" href="catalog.html">Гостиницы</a></li>
+          <li class="navigation-item-box"><a class="navigation-item" href="#">Информация</a></li>
+          <li class="navigation-item-box"><a class="navigation-item" href="#">Фото и видео</a></li>
+          <li class="navigation-item-box"><a class="navigation-item" href="#">Карта штата</a></li>
+          <li class="navigation-item-box"><a class="navigation-item" href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -37,34 +37,40 @@
         <h2>Преимущества</h2>
 
         <div class="wrap-container-features">
-          <h3 class="features-heading">Седона — небольшой городок в Аризоне,<br>
-            заслуживающий большего!</h3>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <div class="wrap-container-photo">
+            <img class="welcome-sedona" src="img/welcome/welcome-to-sedona.svg" width="456.65" height="350.88"
+              alt="Добро пожаловать в прекрасную Седону! «Потому что Гранд-Каньон отстой!»">
+          </div>
+          <div class="features-heading-box">
+            <h3 class="features-heading">Седона — небольшой городок в Аризоне,<br>
+              заслуживающий большего!</h3>
+            <p class="features-heading-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          </div>
         </div>
 
         <ul class="features-list">
           <li class="features-item">
             <div class="features-container">
               <h3 class="features-heading features-container-heading">Настоящий городок</h3>
-              <p>— №1 —</p>
-              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <p class="features-item-number">— №1 —</p>
+              <p class="features-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img src="img/features/photo-town.jpg" width="800" height="256" alt="Гриль-бар Open Range Grill and Tavern">
+            <img class="features-photo" src="img/features/photo-town.jpg" width="800" height="256" alt="Гриль-бар Open Range Grill and Tavern">
 
             <ul class="benefits-list">
               <li class="benefits-item">
                 <h3 class="features-heading benefits-heading">Жильё</h3>
-                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="benefit-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
 
               <li class="benefits-item">
                 <h3 class="features-heading benefits-heading">Еда</h3>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="benefit-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
 
               <li class="benefits-item">
                 <h3 class="features-heading benefits-heading">Сувениры</h3>
-                <p>Не только китайского, но и местного производства!</p>
+                <p class="benefit-text">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
@@ -72,28 +78,28 @@
           <li class="features-item">
             <div class="features-container">
               <h3 class="features-heading features-container-heading">Там есть мост дьявола</h3>
-              <p>— №2 —</p>
-              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <p class="features-item-number">— №2 —</p>
+              <p class="features-item-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
-            <img src="img/features/photo-bridge.jpg" width="800" height="256" alt="Мост дьявола">
+            <img class="features-photo" src="img/features/photo-bridge.jpg" width="800" height="256" alt="Мост дьявола">
           </li>
 
           <li class="features-item features-gray">
-            <h3 class="features-heading">Небольшая площадь</h3>
-            <p>— №3 —</p>
-            <p>Все достопримечательности находятся очень близко</p>
+            <h3 class="features-heading features-heading-gray">Небольшая площадь</h3>
+            <p class="features-item-number">— №3 —</p>
+            <p class="features-item-text">Все достопримечательности находятся очень близко</p>
           </li>
 
           <li class="features-item features-gray">
-            <h3 class="features-heading">Красивая дорога</h3>
-            <p>— №4 —</p>
-            <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+            <h3 class="features-heading features-heading-gray">Красивая дорога</h3>
+            <p class="features-item-number">— №4 —</p>
+            <p class="features-item-text">Ехать в седону из лас-вегаса совсем не скучно!</p>
           </li>
 
           <li class="features-item features-gray">
-            <h3 class="features-heading">Мало туристов</h3>
-            <p>— №5 —</p>
-            <p>Большинство едет в гранд каньон и толпится там</p>
+            <h3 class="features-heading features-heading-gray">Мало туристов</h3>
+            <p class="features-item-number">— №5 —</p>
+            <p class="features-item-text">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </section>
@@ -101,28 +107,28 @@
       <section class="search">
         <div class="wrap-container-search">
           <h2 class="container-search-heading">Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки,<br>
+          <p class="container-search-text">Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
 
         <button class="button btn-brown btn-search" type="button">Поиск гостиницы в Седоне</button>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="search-item">
-            <label for="arrival-date">Дата заезда:</label>
+            <label class="search-item-label" for="arrival-date">Дата заезда:</label>
             <input class="search-item-input" id="arrival-date" type="text" name="arrival" value="24 апреля 2017">
             <span></span>
           </p>
           <p class="search-item">
-            <label for="departure-date">Дата выезда:</label>
+            <label class="search-item-label" for="departure-date">Дата выезда:</label>
             <input class="search-item-input" id="departure-date" type="text" name="departure" value="4 июля 2017">
             <span></span>
           </p>
           <p class="search-item">
-            <label for="adults-count">Взрослые:</label>
+            <label class="search-item-label" for="adults-count">Взрослые:</label>
             <input class="search-item-input" id="adults-count" type="number" name="adults" value="2" step="1" min="0">
           </p>
           <p class="search-item">
-            <label for="kids-count">Дети:</label>
+            <label class="search-item-label" for="kids-count">Дети:</label>
             <input class="search-item-input" id="kids-count" type="number" name="kids" value="0" step="1" min="0">
           </p>
           <button class="button btn-blue btn-search" type="submit">Найти</button>
@@ -135,22 +141,22 @@
       <section class="footer-contacts">
         <h2>Контакты</h2>
 
-        <h3>#VISITSEDONA</h3>
-        <p><a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
+        <h3 class="footer-contacts-heading">#VISITSEDONA</h3>
+        <p class="footer-contacts-phone"><a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
       </section>
 
       <section class="footer-socials">
         <h2>Социальные сети</h2>
 
         <ul class="social-list">
-          <li>
-            <a class="social-button" href="#">Twitter</a>
+          <li class="social-button">
+            <a class="social-link" href="#">Twitter</a>
           </li>
-          <li>
-            <a class="social-button" href="#">Facebook</a>
+          <li class="social-button">
+            <a class="social-link" href="#">Facebook</a>
           </li>
-          <li>
-            <a class="social-button" href="#">Youtube</a>
+          <li class="social-button">
+            <a class="social-link" href="#">Youtube</a>
           </li>
         </ul>
       </section>
