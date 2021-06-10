@@ -31,10 +31,10 @@
     </header>
 
     <main class="container">
-      <h1>Седона</h1>
+      <h1 class="visually-hidden">Седона</h1>
 
       <section class="features">
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
 
         <div class="wrap-container-features">
           <div class="wrap-container-photo">
@@ -50,25 +50,26 @@
 
         <ul class="features-list">
           <li class="features-item">
-            <div class="features-container">
-              <h3 class="features-heading features-container-heading">Настоящий городок</h3>
+            <div class="features-container features-flex-content">
+              <h3 class="features-heading features-container-heading features-item-heading">Настоящий городок</h3>
               <p class="features-item-number">— №1 —</p>
               <p class="features-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="features-photo" src="img/features/photo-town.jpg" width="800" height="256" alt="Гриль-бар Open Range Grill and Tavern">
+            <img class="features-photo" src="img/features/photo-town.jpg" width="800" height="256"
+              alt="Гриль-бар Open Range Grill and Tavern">
 
             <ul class="benefits-list">
-              <li class="benefits-item">
+              <li class="benefits-item features-flex-content">
                 <h3 class="features-heading benefits-heading">Жильё</h3>
                 <p class="benefit-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
 
-              <li class="benefits-item">
+              <li class="benefits-item features-flex-content">
                 <h3 class="features-heading benefits-heading">Еда</h3>
-                <p class="benefit-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="benefit-text">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
               </li>
 
-              <li class="benefits-item">
+              <li class="benefits-item features-flex-content">
                 <h3 class="features-heading benefits-heading">Сувениры</h3>
                 <p class="benefit-text">Не только китайского, но и местного производства!</p>
               </li>
@@ -76,52 +77,56 @@
           </li>
 
           <li class="features-item">
-            <div class="features-container">
-              <h3 class="features-heading features-container-heading">Там есть мост дьявола</h3>
+            <div class="features-container features-flex-content">
+              <h3 class="features-heading features-container-heading features-item-heading">Там есть мост дьявола</h3>
               <p class="features-item-number">— №2 —</p>
               <p class="features-item-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
             <img class="features-photo" src="img/features/photo-bridge.jpg" width="800" height="256" alt="Мост дьявола">
           </li>
 
-          <li class="features-item features-gray">
-            <h3 class="features-heading features-heading-gray">Небольшая площадь</h3>
+          <li class="features-item features-gray features-flex-content">
+            <h3 class="features-heading features-item-heading">Небольшая площадь</h3>
             <p class="features-item-number">— №3 —</p>
-            <p class="features-item-text">Все достопримечательности находятся очень близко</p>
+            <p class="features-item-text">Все достопримечательности<br> находятся очень близко</p>
           </li>
 
-          <li class="features-item features-gray">
-            <h3 class="features-heading features-heading-gray">Красивая дорога</h3>
+          <li class="features-item features-gray features-flex-content">
+            <h3 class="features-heading features-item-heading">Красивая дорога</h3>
             <p class="features-item-number">— №4 —</p>
-            <p class="features-item-text">Ехать в седону из лас-вегаса совсем не скучно!</p>
+            <p class="features-item-text">Ехать в седону из лас-вегаса совсем<br> не скучно!</p>
           </li>
 
-          <li class="features-item features-gray">
-            <h3 class="features-heading features-heading-gray">Мало туристов</h3>
+          <li class="features-item features-gray features-flex-content">
+            <h3 class="features-heading features-item-heading">Мало туристов</h3>
             <p class="features-item-number">— №5 —</p>
-            <p class="features-item-text">Большинство едет в гранд каньон и толпится там</p>
+            <p class="features-item-text">Большинство едет в гранд каньон<br> и толпится там</p>
           </li>
         </ul>
       </section>
 
       <section class="search">
-        <div class="wrap-container-search">
-          <h2 class="container-search-heading">Заинтересовались?</h2>
-          <p class="container-search-text">Укажите предполагаемые даты поездки,<br>
-            и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        </div>
+        <h2 class="visually-hidden">Поиск</h2>
 
-        <button class="button btn-brown btn-search" type="button">Поиск гостиницы в Седоне</button>
+        <div class="wrap-search">
+          <div class="wrap-container-search">
+            <h3 class="container-search-heading">Заинтересовались?</h2>
+            <p class="container-search-text">Укажите предполагаемые даты поездки,<br>
+              и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          </div>
+
+          <button class="button btn-brown btn-search" type="button">Поиск гостиницы в Седоне</button>
+        </div>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="search-item">
             <label class="search-item-label" for="arrival-date">Дата заезда:</label>
             <input class="search-item-input" id="arrival-date" type="text" name="arrival" value="24 апреля 2017">
-            <span></span>
+            <span class="icon-calendar"></span>
           </p>
           <p class="search-item">
             <label class="search-item-label" for="departure-date">Дата выезда:</label>
             <input class="search-item-input" id="departure-date" type="text" name="departure" value="4 июля 2017">
-            <span></span>
+            <span class="icon-calendar"></span>
           </p>
           <p class="search-item">
             <label class="search-item-label" for="adults-count">Взрослые:</label>
@@ -139,14 +144,14 @@
 
     <footer class="main-footer">
       <section class="footer-contacts">
-        <h2>Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
 
         <h3 class="footer-contacts-heading">#VISITSEDONA</h3>
         <p class="footer-contacts-phone"><a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
       </section>
 
       <section class="footer-socials">
-        <h2>Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
 
         <ul class="social-list">
           <li class="social-button">
