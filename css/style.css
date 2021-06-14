@@ -752,34 +752,36 @@ img {
   color: var(--opacity-black);
 }
 
-.type-and-price {
+.type-price-buttons {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin-bottom: 4px;
+}
 
-  width: 258px;
-  margin-bottom: 6px;
+.type-and-more {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: max-content;
 }
 
 .hotel-type {
   margin: 0;
   width: max-content;
+  margin-bottom: 15px;
 }
 
 .hotel-price {
   margin: 0;
   width: max-content;
-  margin-right: 80px;
+  margin-bottom: 15px;
 }
 
-.more-and-book {
+.price-and-book {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 4px;
-  width: max-content;
+  width: max-content
 }
 
 .hotel-rating-container {
