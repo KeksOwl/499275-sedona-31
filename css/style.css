@@ -555,16 +555,18 @@ img {
   outline: 0;
 }
 
-.form-calendar::before {
-  content: "";
+.form-calendar-icon {
   position: absolute;
-  width: 21px;
-  height: 23px;
-  background-image: url(../img/icons/icon-calendar.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
   left: 0;
   top: 0;
+}
+
+.form-calendar-icon:hover path {
+  fill: var(--basic-black);
+}
+
+.form-calendar-icon:active path {
+  fill: var(--special-blue);
 }
 
 .btn-minus {
@@ -575,24 +577,28 @@ img {
   top: 30%;
   transform: translate(-5%, 6%);
 
+
   background: none;
   border: none;
   outline: none;
 }
 
-.btn-minus::before {
-  content: "";
+.btn-minus-icon {
   position: absolute;
-  width: 12px;
-  height: 3px;
-  background-image: url(../img/icons/icon-minus.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  left: 0px;
+  left: 0;
+  top: 50%;
 }
 
-.btn-minus-kids::before {
-  left: 25%;
+.btn-minus:hover rect {
+  fill: var(--basic-black);
+}
+
+.btn-minus:active rect {
+  fill: var(--special-blue);
+}
+
+.btn-minus-kids {
+  transform: translateX(20%);
 }
 
 .btn-plus {
@@ -601,27 +607,29 @@ img {
   position: absolute;
   right: 5%;
   top: 30%;
-  transform: translate(-20%, 5%);
+  transform: translate(-10%, 25%);
 
   background: none;
   border: none;
   outline: none;
 }
 
-.btn-plus::before {
-  content: "";
+.btn-plus-icon {
   position: absolute;
-  width: 11px;
-  height: 11px;
-  background-image: url(../img/icons/icon-plus.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  left: 10%;
-  top: 20%;
+  left: 0;
+  top: 0;
 }
 
-.btn-plus-kids::before {
-  left: 35%;
+.btn-plus:hover path {
+  fill: var(--basic-black);
+}
+
+.btn-plus:active path {
+  fill: var(--special-blue);
+}
+
+.btn-plus-kids {
+  transform: translate(15%, 25%);
 }
 
 /* Filter */
