@@ -169,7 +169,7 @@ img {
 
 .navigation-item {
   color: var(--basic-black);
-  padding: 20px;
+  padding: 19px;
 }
 
 .navigation-item:hover {
