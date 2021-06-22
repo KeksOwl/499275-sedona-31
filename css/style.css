@@ -46,6 +46,7 @@
 
   --opacity-black: rgba(0, 0, 0, 0.3);
   --opacity-white: rgba(255, 255, 255, 0.3);
+  --opacity-neutral: rgba(238, 238, 238, 0.2); /* Цвет фона при наведении в навигации */
 
   --footer-bg: rgba(255, 255, 255, 0.9);
 
@@ -175,7 +176,8 @@ img {
 
 .navigation-item:hover {
   color: var(--special-blue-hover);
-  background-color: var(--basic-neutral);
+  background-color: var(--opacity-neutral);
+  box-shadow: 0px 5px 15px var(--shadow-wrapper);
 }
 
 .navigation-item:focus {
@@ -244,11 +246,23 @@ img {
 
   margin: 0;
   padding: 0;
+
+  max-width: 500px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .features-heading-text {
   margin: 0;
   padding: 0;
+
+  max-width: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /* Features */
@@ -309,6 +323,11 @@ img {
   max-height: 256px;
 }
 
+.features-container:first-child {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
 .features-container-heading {
   color: var(--basic-white);
 }
@@ -323,12 +342,29 @@ img {
   word-wrap: break-word;
 }
 
+@-moz-document url-prefix() {
+  .features-item:nth-child(2) .features-heading {
+    width: 151px;
+  }
+}
+
 .features-item-number {
   margin: 0;
+
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .features-item-text {
   margin: 0;
+
+  max-width: 350px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .features-gray {
@@ -399,10 +435,20 @@ img {
 
 .benefits-heading {
   color: var(--basic-black);
+
+  max-width: 250px;
+  white-space: nowrap;
 }
 
 .benefit-text {
   margin: 0;
+
+  word-wrap: break-word;
+  max-width: 350px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 /* Search */
@@ -445,11 +491,23 @@ img {
   margin: 0;
 
   transform: translateX(-5px);
+
+  max-width: 800px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .container-search-text {
   margin: 0;
   padding: 0;
+
+  max-width: 1000px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .search-form {
@@ -518,12 +576,16 @@ img {
 
   box-sizing: border-box;
   padding-left: 13px;
+  padding-right: 43px;
 }
 
 .search-item-input[type=number] {
   width: 114px;
 
   text-align: center;
+
+  box-sizing: border-box;
+  padding: 0 35px;
 
   -moz-appearance: textfield; /* Для Firefox */
 }
@@ -1346,4 +1408,14 @@ img {
 
 .btn-book {
   padding: 3px 18px 3px 16px;
+}
+
+.map {
+  border: none;
+
+  width: 1199px;
+  height: 594px;
+
+  background-image: url(../img/map.png);
+  background-color: var(--basic-neutral);
 }
