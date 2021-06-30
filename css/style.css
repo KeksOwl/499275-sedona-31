@@ -837,6 +837,10 @@ img {
   background-repeat: no-repeat;
 }
 
+.filter-input:focus + .filter-label::before {
+  transform: scale(1.1);
+}
+
 .filter-input:checked + .filter-label::before {
   content: "";
   position: absolute;
@@ -901,8 +905,10 @@ img {
   left: 0;
 }
 
-.toggle:hover {
+.toggle:hover,
+.toggle:focus {
   transform: scale(1.2);
+  outline: 0;
 }
 
 .toggle-max {
@@ -1067,8 +1073,8 @@ img {
   border: none;
 }
 
-.sort-input {
-  display: none;
+.sort-input:focus ~ .sort-label {
+  outline: 1px solid var(--basic-black);
 }
 
 .sort-input:checked ~ .sort-label {
@@ -1472,7 +1478,8 @@ img {
   margin-right: 10px;
 }
 
-.btn-filter:hover {
+.btn-filter:hover,
+.btn-filter:focus {
   background-color: var(--basic-white);
   color: var(--basic-black);
 }
