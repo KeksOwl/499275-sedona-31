@@ -626,11 +626,12 @@ img {
   top: 0;
 }
 
-.form-calendar-icon:hover path {
+.form-calendar:hover path,
+.form-calendar:focus path {
   fill: var(--basic-black);
 }
 
-.form-calendar-icon:active path {
+.form-calendar:active path {
   fill: var(--special-blue);
 }
 
@@ -656,7 +657,8 @@ img {
   top: 50%;
 }
 
-.btn-minus:hover rect {
+.btn-minus:hover rect,
+.btn-minus:focus rect {
   fill: var(--basic-black);
 }
 
@@ -689,7 +691,8 @@ img {
   top: 0;
 }
 
-.btn-plus:hover path {
+.btn-plus:hover path,
+.btn-plus:focus path {
   fill: var(--basic-black);
 }
 
@@ -1407,7 +1410,8 @@ img {
   background-color: var(--special-brown);
 }
 
-.btn-brown:hover {
+.btn-brown:hover,
+.btn-brown:focus {
   background-color: var(--special-brown-hover);
 }
 
@@ -1420,7 +1424,8 @@ img {
   background-color: var(--special-blue);
 }
 
-.btn-blue:hover {
+.btn-blue:hover,
+.btn-blue:focus {
   background-color: var(--special-blue-hover);
 }
 
