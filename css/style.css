@@ -532,6 +532,10 @@ img {
   transform: translateX(-50%);
 }
 
+.search-form-hide {
+  display: none;
+}
+
 .search-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1444,6 +1448,7 @@ img {
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
+  z-index: 1;
 }
 
 .btn-search[type=submit] {
@@ -1501,4 +1506,16 @@ img {
 
   background-image: url(../img/map.png);
   background-color: var(--basic-neutral);
+}
+
+/* Animations */
+
+@keyframes form-show {
+  from { transform: translate(-50%, -25%); }
+  to { transform: translate(-50%, 0); }
+}
+
+.form-show-animation {
+  animation-name: form-show;
+  animation-duration: 0.2s;
 }
